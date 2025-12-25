@@ -34,15 +34,46 @@
         </header>
 
         <!-- Totals Dashboard -->
+        <h2 style="font-size: 1rem; color: var(--text-muted); margin-bottom: 10px; margin-top: 10px;">Today's Intake
+        </h2>
         <div class="stats-dashboard">
             <div class="stat-card">
                 <h3>Calories</h3>
-                <div class="value">{{ total_calories }}</div>
+                <div class="value">{{ today_calories }}</div>
                 <div class="unit">kcal</div>
             </div>
             <div class="stat-card">
                 <h3>Protein</h3>
-                <div class="value">{{ total_protein }}</div>
+                <div class="value">{{ today_protein }}</div>
+                <div class="unit">grams</div>
+            </div>
+        </div>
+
+        <h2 style="font-size: 1rem; color: var(--text-muted); margin-bottom: 10px; margin-top: 20px;">Daily Average</h2>
+        <div class="stats-dashboard">
+            <div class="stat-card" style="border-color: rgba(255, 255, 255, 0.05);">
+                <h3>Avg Calories</h3>
+                <div class="value" style="font-size: 1.8rem; opacity: 0.9;">{{ avg_calories }}</div>
+                <div class="unit">kcal/day</div>
+            </div>
+            <div class="stat-card" style="border-color: rgba(255, 255, 255, 0.05);">
+                <h3>Avg Protein</h3>
+                <div class="value" style="font-size: 1.8rem; opacity: 0.9;">{{ avg_protein }}</div>
+                <div class="unit">g/day</div>
+            </div>
+        </div>
+
+        <h2 style="font-size: 1rem; color: var(--text-muted); margin-bottom: 10px; margin-top: 20px;">All-Time Total
+        </h2>
+        <div class="stats-dashboard">
+            <div class="stat-card" style="background: rgba(255, 255, 255, 0.03);">
+                <h3>Total Cals</h3>
+                <div class="value" style="font-size: 1.5rem; opacity: 0.8;">{{ total_calories }}</div>
+                <div class="unit">kcal</div>
+            </div>
+            <div class="stat-card" style="background: rgba(255, 255, 255, 0.03);">
+                <h3>Total Protein</h3>
+                <div class="value" style="font-size: 1.5rem; opacity: 0.8;">{{ total_protein }}</div>
                 <div class="unit">grams</div>
             </div>
         </div>
